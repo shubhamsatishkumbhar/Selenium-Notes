@@ -1,0 +1,454 @@
+Automation Testing and Selenium Short Notes: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. What is Automation testing?
+	Automated testing is a process that validates if software is functioning appropriately and meeting requirements before it is released into production.Automation testing is the process of testing software and other tech products to ensure it meets strict requirements.
+	Automation testing is the application of tools and technology to testing software with the goal of reducing testing efforts, delivering capability faster and more affordably.
+	Manually repeating these tests is costly and time consuming. Once created, automated tests can be run over and over again at no additional cost and they are much faster than manual tests. Automated software testing can reduce the time to run repetitive tests from days to hours.
+
+
+2.Importance of Automation testing?
+
+	Automation reduces time, effort and cost, whilst reducing manual errors, giving your business more time to focus on your primary objectives. 
+	Repetitive tasks can be completed faster. Automating processes ensures high quality results as each task is performed identically, without human error.
+
+	1. Increase in test coverage: More scripts can be tested at the same time, resulting in an increase in the test coverage. It helps save time and takes the load off of manual testers.
+	2. Greater accuracy: Continuous testing increases chances of errors while done manually, but in automated testing, repetitive tests can be performed with the same precision.
+	3. Cost saving: With automated testing, the test cases run at a faster speed and bugs are identified early on in the development cycle and fixed. Despite high initial costs, once the automated framework is set up, there is an overall reduction in the costs.
+	4. Reduces regression testing time: Automated regression practiced with testing tools allows manual testers to be freed from running monotonous regression tests. The testers get time to perform value-add tasks.
+	5. Performs tasks that cannot be done by manual testers: Certain tests such as the controlled web application tests can be simulated with automated testing, but cannot be performed by manual testers.
+	6. Time-saving: With automated testing, manual scripts are also automated and regression testing time is reduced. As tests are run 24/7, automated testing saves time.
+	7. Reusability of test scripts: In automated testing, the same script can be used with minor changes. Thus, reusability of test scripts facilitates the process of testing, and also, the same scripts can be stored and reused for repeating the test when the need arises. 
+	8. Helpful to testers: Since tests can run automatically when the source code changes and notify the testers of any issue, it is very helpful to both testers and developers.
+	9. Return on investment is high: Automations help businesses complete the testing process faster with greater accuracy and coverage, thereby resulting in high  return of investment
+
+3.Name automation tools with respect to Unit, Functional, Non functional and test management?
+	Unit Testing tools:- JUnit, NUnit, TestNG, Mockito, PHPUnit
+	Functional testing:- Selenium, SoapUI,QTP or UFT(Unified functional testing from HP),Katalan Studio, Watir, Test Complete, Ranorex, Sahi Pro, IBM rational functional testing, Tricentis Tosca, 
+	Non Functional testing:-JMeter, Load Complete, Loadrunner, Loadster, Loadstorm, Loadtracer, NeoLoad, vPerformer, WebLoad Professional, Webserver Stress tool
+	Test Management:-practitest, TestRail, Xray, TestGear, Kualitee, Aqua ALM, IBM Rational quality Management, Microfocus silk central, TestLink, Test Collab
+
+4. What is Selenium?
+	Selenium is a free Open source functional Testing tool used for testing web applications on multiple browsers and multiple operating systems (Platforms). It is used for Functional and Regression Testing. 
+	Testing done by the selenium tool is usually referred to as Selenium Testing.
+
+5. Advantages and Disadvantage of Selenium?
+	Advantages of Selenium
+	1. Selenium is pure open source, freeware and portable tool. 
+	2. Selenium supports variety of languages that include Java, Perl, Python, C#, Ruby, Groovy, Java Script, and VB Script. etc. 
+	3. Selenium supports many operating systems like Windows, Macintosh, Linux, Unix etc. 
+	4. Selenium supports many browsers like Internet explorer, Chrome, Firefox, Opera, Safari etc. 
+	5. Selenium can be integrated with ANT or Maven kind of framework for source code compilation. 
+	6. Selenium can be integrated with TestNG testing framework for testing our applications and generating reports. 
+	7. Selenium can be integrated with Jenkins or Hudson for continuous integration. 
+	8. Selenium can be integrated with other open source tools for supporting other features. 
+	9. Selenium can be used for Android, IPhone, Blackberry etc. based application testing. 
+	10. Selenium supports very less CPU and RAM consumption for script execution. 
+
+	Disadvantages of Selenium
+	1. Selenium needs very much expertise resources. The resource should also be very well versed in framework architecture. 
+	2. Selenium only supports web based application and does not support windows based application. 
+	3. It is difficult to test Image based application. 
+	4. Selenium need outside support for report generation activity like dependence on TestNG or Jenkins. 
+	5. Selenium does not support built in add-ins support. 
+	6. Selenium user lacks online support for the problems they face. 
+	7. Selenium does not provide any built in IDE for script generation and it need other IDE like Eclipse for writing scripts. 
+	8. Selenium script creation time is bit high. 
+	9. Selenium does not support file upload facility. 
+	10. Selenium partially supports for Dialog boxes.
+
+6. History of Selenium (When,Where,Who,How they name selenium)
+	The name Selenium comes from a joke made by Huggins in an email, mocking a competitor named Mercury, 
+	saying that you can cure mercury poisoning by taking selenium supplements. 
+
+	Selenium was initially developed by Jason Huggins in 2004 while he was working as an Engineer in ThoughtsWork on a web application that requires frequent testing.
+
+7. Name the components of Selenium?
+	Selenium IDE
+	Selenium RC
+	Selenium Web driver
+	Selenium Grid
+
+8. pros and cons of all Components?
+	Selenium IDE
+	Pros:-
+		1.UI based record and playback tool.
+		2.Easy to understand & developed a test script.
+		3.Selenium-IDE test script export into web driver code & Selenium–RC
+		4.It is very easy to install and use.
+		5.No programming experience is required to use Selenium IDE.
+		6.Selenium-IDE has built-in help feature, and they show the documentation on the selected or entered command.
+		7. It helps us in debugging by displaying the information and error messages.
+		8. It provides excellent support for extensions.
+
+	Cons:-
+		1.It supports only Firefox browser because it implements as a plug-in for Firefox.
+		2.It cannot launch new browser and run the test script (it work with existing browser only)
+		3.It supports only the html language.
+		4.Parameterization is not possible.
+		5.Reading from the external file and run the test script is called parameterization.
+		6.Can be used only with a simple application, cannot be applied to develop Ajax application.
+		7.It is an asynchronous java framework which is used to create dynamic applications like-facebook.com, BBC.com
+		8.Looping and conditional statements are not allowed.
+		9.Selenium IDE does not support error handling and database testing.
+		10.Selenium IDE cannot be used in iPhone and Android applications testing.
+		11.Selenium IDE does not support iterations and conditional operations.
+
+	Selenium RC
+	Pros:-
+		1.Supports Cross Browser testing.
+		2.Conditional operation and iteration are supported.
+		3.Supports data driven testing.
+		4.Complete and matured API.
+		5.New browser are readily supported.
+		6.execution speed is more than IDE.
+		7. support User preferred language.
+
+	Cons:-
+		1.complicated Installation than IDE.
+		2.prior programming language is needed.
+		3.selenium RC must be needed to run test cases.
+		4.API contains confusing and redundant commands .
+		5.Browser interaction is less realistic.
+		6.Slower Execution speed than We driver.
+		7.Uses Java Scripts and results are inconsistent.
+
+	Selenium Web driver
+	Pros:-
+		1.Open Source Packages
+		2.Ease Of Implementation
+		3.Language Support like C#, Python, Java etc
+		4.Support Various Operating Systems
+		5.Cross Browser Testing Compatibility
+		6.Easy Integration with Devops Tools like Jenkins
+
+	Cons:-
+		1.No Technical Support except Community Support
+		2.Only Web Based Application Can be Tested
+		3.Technical Expertise is required for maintenance
+		4.Cannot Automate Captcha Verification
+		5.Need knowledge to setup Test Environment
+
+	Selenium Grid
+	Pros:-
+		1.Supports simultaneous of test cases in multiple environments and browsers.
+		2.Captures the screenshots of browsers at different stages of test case execution.
+		3.Provides tools needed to diagnose the failures and rebuild a similar environment for new test execution.
+		4.Selenium Grid saves time extremely as it uses Hub-Node design.
+
+	Cons:-
+		1.The code is executed only on the local machines where test cases are launched.
+		2.The remote machines only receive the browser control commands.
+		3.Large quantities of node servers result in performance depreciation.
+		4.Considerable efforts and time are required for initial operation of parallel testing.
+
+9.Name the vendor or authorised website for selenium
+	https://www.selenium.dev
+
+10.Prerequisites of Selenium IDE and Webdriver.
+
+Java (JDK)
+Eclipse.
+Selenium Client and WebDriver Language bindings.
+Configuring Selenium Webdriver with Eclipse.
+Creating and Running the first test.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Creating Connection in with WebDriver
+System.setProperty("webdriver.(chrome or firefox or safari or internetexplorer).drive","type a location Location of that drive in your pc or copying thr file in project and use file name")) //Download this from Selenium.dev (Language Bindings and Web driver) 
+WebDriver driver = new ChromeDriver();(for chrome) // Linguage binding should add either on modulepath or classpath in(Project->right click->Build path->configure path->Libraries->click on modulepath or classpath->Add external jars->add your downloaded language bindings
+
+
+#Methods in Selenium
+
+1) To Fetch a Web Page
+	1.Using Get Method-
+		driver.get("https://www.google.com");
+	
+	2.Using Navigate Method
+		driver.navigate().to("https://www.google.com");
+
+2)Locating Forms and Sending user inputs.
+	driver.findElement(By.id("q").sendKeys("cricket");
+
+3)Clearing User Inputs
+	driver.findElement(By.id("q").clear();
+
+4)Fetching data over any Web Element
+	driver.findElement(By.id("ele")).getText();
+
+5)Performing Click Event
+	driver.findElement(By.id("ele")).click();
+
+6)Navigating Backword in Browser History
+	driver.navigate().back()
+
+7)Navigating forword in Browser History
+	driver.navigate().forward();
+
+8)Refresh/Reload WebPage
+	driver.navigate().refresh();
+
+9)closing browser
+	driver.close();
+
+10)Closing Browser and other all othe windows associated with the driver
+	driver.quite();
+
+11) Moving Between Windows
+	driver.switchTo().window("windowName");
+
+11) Moving Between frames
+	driver.switchTo().frame("frameName");
+
+To MAximize Browser
+	driver.manage().window().maximize();
+
+Scrolling down the Webpage by 5000 pixels
+javascriptExecutor js = (javascriptExecutor)driver;
+js.excuteScript("scrollBy(0,5000)");
+
+#Locators in Selenium:-
+By ID, By Name, By Class Name, By Link Text, By tag name,By Partial Link Text, By CSS Selector,By XPath
+
+#About ID
+	driver.findElement(By.id("id"))
+		like if in html code is like <input id="frame" name="first" then
+			driver.findElement(By.id("frame"))
+
+#About Name
+	driver.findElement(By.name("name"))
+		like if in html code is like <input id="frame"name="first"then
+			driver.findElement(By.name("first"))
+#About className
+	driver.findElement(By.className("ClassName"))
+		like if in html code is like <input type="frame" class="first"then
+			driver.findElement(By.className("first"))
+#About tagName
+	driver.findElement(By.tagName("tagName"))
+		like if in html code is like <input type="frame" class="first"then
+			driver.findElement(By.tagName("input"))
+#About linkText
+	driver.findElement(By.linkText("linkText"))
+		like if in html code is like <a href="https://hdb.hbfhd.jhjh.com">This is link</a>then
+			driver.findElement(By.linkText("This is link"))
+#About PartialLink text
+	driver.findElement(By.partialLinkText("partialLinkText"))
+		like if in html code is like <a href="https://hdb.hbfhd.jhjh.com">This is link</a>then
+			driver.findElement(By.partialLinkText("This is "))
+
+#About CSS Selectors-
+It works on six modes to locate an Web Elements
+		1.Tag and ID 2.Tag and Class 3.Tag and Attribute 4.Tag,class and Attribute 5.Sub -String matches
+
+	1.Tag and ID
+		driver.findElement(By.cssSelector("Tag#Value of id Attribute"))
+			like if in html code is like <input id="frame" then
+				driver.findElement(By.cssSelector("input#frame"))
+		for button
+		driver.findElement(By.cssSelector("button#idOfButton"))
+
+	2.Tag and Class
+		driver.findElement(By.cssSelector("Tag.Value of class Attribute"))
+			like if in html code is like <input class="frame" then
+				driver.findElement(By.cssSelector("input.frame"))
+
+	3.Tag and Attribute
+		driver.findElement(By.cssSelector("Tag[Attribute=Value"))
+			like if in html code is like <input id="frame" then
+				driver.findElement("input[id=fname]"))
+	
+	4.Tag,Class and Attribute
+		driver.findElement(By.cssSelector("tag.class[attribute=value]"))
+			like if in html code is like <input id="frame" class="dsffs" maxlength="2014" name="q" then
+				driver.findElement("input.dsffs[name=q]"))
+
+	5.Sub-String Matches
+		driver.findElement(By.cssSelector("Tag[attribute^=prefix of the string"))
+			like if in html code is like <input class="frame" then
+				driver.findElement(By.cssSelector("input[id^='fna'"))
+
+#About XPath Selector-
+Element through XPath can be written as:
+	1.Using Single Slash
+		Finding Element by absolute Path.It can be created to start section from the document node/Start node/Parent node
+			driver.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/form/div[1]/div/div[1]/div/div/input[1]");
+	2.Using Double Slash
+		Finding element by using Relative XPath.It is used to create XPath with relative path.The XPath can created to start section from anywhere within the doc.
+			driver.findingElement(By.xpath("//form/div[1]/div/div[1]/div/div/input[1]"));
+	3.Using Single Attribute
+		By right clicking on any tag of html code and copying the XPath and paste it in your code.
+			for e.g //<HTML tag>[@attribute_name='attribute_value'] or //*[@attribute_name='attribute value']
+				Then XPAth will be-> driver.findElement(By.xpath("//*[@id="lst-ib"]"));
+	4.Using Multiple Attribute
+		for e.g //<HTML tag>[@attribute_name1='attribute_value1'][@attribute_name2='attribute value2'] or //*[@attribute_name1='attribute_value1'][@attribute_name2='attribute value2']
+			Then XPath will be--> driver.findElement(By.xpath("//*[@id='lst-ib'][@class='gsfi lst-d-f']"));
+	5.Using AND
+		for e.g //<HTML tag>[@attribute_name1='attribute_value1']and[@attribute_name2='attribute value2'] or //*[@attribute_name1='attribute_value1']and[@attribute_name2='attribute value2']
+			Then XPath will be--> driver.findElement(By.xpath("//*[@id='lst-ib']and[@class='gsfi lst-d-f']"));
+	6.Using OR
+		for e.g //<HTML tag>[@attribute_name1='attribute_value1']or[@attribute_name2='attribute value2'] or //*[@attribute_name1='attribute_value1']or[@attribute_name2='attribute value2']
+			Then XPath will be--> driver.findElement(By.xpath("//*[@id='lst-ib']or[@class='gsfi lst-d-f']"));
+	7.Using Contains()
+		for e.g //<HTML tag>[contains@attribute_name;'attribute_value'] or //*[@attribute_name;'attribute_value']
+			Then XPath will be--> driver.findElement(By.xpath("//*[@id;'lst-ib']"));
+	8.Using Starts_With()
+		for e.g //<HTML tag>[starts-with(@attribute_name;'attribute_value')] or //*[starts-with(@attribute_name;'attribute_value')]
+			Then XPath will be--> driver.findElement(By.xpath("//*[starts-with(@id;'lst-ib')]"));
+	9.Using text()
+		text method is used to identify an element based on text availableon page.
+			driver.findElement(By.xpath("//*[text()='Google offered in')]"));
+	10.Using last()
+		last() method selects the last element (of mentioned type) out of all input element present.
+			driver.findElement(By.xpath("(//input[@type='text'])[last()]"));
+-------------------------------------------------------------------------------------------
+
+#Select in selenium
+ The select class in selenium WebDriver is selecting and deselectng option in a dropdown().The objects of select-type can be initialized by passing the dropdown webElement as parameter to its constructor.
+	To Use Select Method we have to use:
+		WebElement somethin =driver.findElement(By.id("dropdown"));
+		Select dropdown = new Select(something);	
+ 
+#Methods to select option from dropdown:-
+	1.selectByIndex- Used to select option based on its index,beginning with 0.
+		dropdown.selectByIndex(5);
+	2.selectByValue- It is used to select option based on its value
+		dropdown.selectByValue("Database");
+	3.selectByVisibleText- It is used to select option based on text over option.
+
+#Drag and Drop
+	Action Class
+		To intereact with drag and drop we have Action class in Selenium WebDriver. 
+		The Different methods of Action class
+			1.clickAndHold(WebElement element)- Clicks a web element at the middle(without releasing)
+			2.moveToElement(WebElement element)- Moves the mouse pointer to the middle of the web element without clicking.
+			3.release(WebElement element)- Release the left click(which is in pressed state)
+			4.build() - Generates the composite acion.
+
+*Code Example of drag and drop
+//Webelement on which drag and drop operation needs to perform
+	WebElement use = driver.findElement(By.id("user_id"));
+//Webelement to which the above object is dropped
+	WebElement to = driver.findElement(By.("test"));
+//Creating object of action class to build composite actions.
+	Actions act = new Actions(driver);
+//Performing the drag and drop action
+	act.dragAndDrop(use,to).build().perform(); 
+
+-----------------------------------------------------
+#Handling Alerts in Selenium
+	Selenium WebDriver Provides three methods to accept and reject the Alert depending on alert types:
+		1.void dismiss():-  This method is used to 'Cancel' button of the alert.
+			Syntax-  driver.switchTo().alert().dismiss();
+		2.void accept():-  This method is used to click on 'Ok' button of the alert.
+			Syntax-  driver.switchTo().alert().accept():
+		3.String getText():-  This method is used to capture the alert message.
+			Syntax-  driver.switchTo().alert().getText();
+		4.void sendKeys(String stringToSend):-  This method is used to send some data to the alert box.
+			Syntax-  driver.switchTo().sendKeys("Text");
+*Code Example
+ //Click on Generate alert button
+	driver.findElement(By.linkText("Generate Alert Box")).click();
+//Using Alert class to first switch to focus to the alert box
+	Alert alert = driver.switchTo().alert();
+//Using accept() method to accept the alert box
+	alert.accept();
+//Handling Confirm Box
+//Clickon Generate Confirm Box
+	driver.findElement(By.linkText("Generate Confirm Box")).click();
+	Alert confirmBox = driver.switchTo().alert();
+//Using dismiss() command to dismiss the confirm box
+//Similarly accept can be used accept the confirm box
+	confirmBox.dismiss();
+----------------------------------
+#Scroll By method 
+	To scroll web page, we have to use the scrollBy method of JavaScript.
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("scrollBy(0,4500)"); //Scroll down the webpage by 4500 pixels
+		js.executeScript("scrollBy(0,-4500)"); //Scroll up the webpage by 4500 pixels
+			
+------------------------
+#Browser Commands
+	1.Get Command:-
+		driver.get("url");
+			or
+		String url = "url";
+		driver.get(url);
+
+	2.Get Title Command:-
+		driver.getTitle(); or String title = driver.getTitle();
+	3.Get Current URL Command:-
+		This command will fetches the current URL of current web page.
+		driver.getCurrentUrl(); or String CurrentUrl = driver.getCurrentUrl();
+	4.Get Page Source Command:-
+		This method return the source of the current web page loaded on the current browser.
+		driver.getPageSource(); or String PageSource = driver.getPageSource();
+	5.Close Command:-
+		This method terminates the current browser window .
+		driver.close();
+	6.Quit Command:-
+		This method terminates all windows operating by WebDriver.
+		driver.quit();
+#Navigation Commands
+	1.Navigation to Command:-  This method load new webPage in the exising browser.
+		driver.navigate().to("url")
+	2.Forward Command:-  This method enables the web browser to click on the forward button in the existing browser window.
+		driver.navigate().forward();
+	3.Back Command:-  This method enables the web browser to click on the back button in the existing browser window.
+		driver.navigate().back();
+	4.Refresh Command:-  This method refresh/reloads the current web page in the existing browser window.
+		driver.navigate().refresh();
+
+#WebElement Commands
+	WebElement command = driver.findElement(By.id("User-id"));
+	1.Clear Command
+		command.clear();
+	2.Senkeys Command
+		command.sendKeys("Hello");
+	3.Click Command
+		command.click()
+	4.IsDisplayed Command
+		command.isDisplayed();
+	5.IsSelected Command
+		command.isSelected();
+	6.IsEnabled Command
+		command.isEnabled();
+	7.Submit Command
+		command.submit();
+	8.GetText Command
+		command.getText();
+	9.GetTagName Command
+		command.getTagName();
+	10.getCssValue Command
+		command.getCssValue();
+	11.getAttribute Command
+		command.getAttribue();
+	12.getSize Command
+		command.getSize();
+	13.getLocation Command
+		command.getLocation();
+---------------------------------------------
+#Handling Radio Buttons
+	*Here in xpath we have to mention path where any specifi radio button were located
+	driver.findElement(By.xpath("")).click();
+
+	*Here in xpath we have to mention overall path where all radio buttons were located
+		 *In following example we find total number of radio buttons and third radio button using for loop and click on that.(By using get method)
+			int a = driver.findElement(By.xpath("")).size(); //total radio buttons
+			for(int i=0;i<a;i++){
+				driver.findElement(By.xpath("")).get(3).click();
+			}
+--------------------------------------
+#Handling Checkbox
+	We can use two methods for this
+		1.isSelected():-  This method determines whether checkbox is selected or not.If selected then return true otherwise false.
+		2.click():-  This method selects the locator. In this case, it is selecting the option which u choose.
+		
+
+	
+				
+
+
+
